@@ -151,14 +151,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
 
 <!-- HEADER -->
 <header class="header">
-  <img class="logo-img" src="assets/images/LOGO_FUNKY_GREENS.png" alt="Funky Greens"/>
+  <img class="logo-img" src="LOGO_FUNKY_GREENS.png" alt="Funky Greens"/>
   <button class="header-btn" onclick="openChat()">Hablar con FUNKY ↗</button>
 </header>
 
 <!-- HERO -->
 <div class="hero-wrap">
   <div class="hero-card">
-    <img class="hero-img" src="assets/images/HERO.png" alt="FUNKY"/>
+    <img class="hero-img" src="HERO.png" alt="FUNKY"/>
     <div class="hero-overlay">
       <h1 class="hero-title">HI, I'M<br>FUNKY</h1>
       <div class="ticker-outer">
@@ -213,9 +213,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
     <!-- Card 1: Cuentas precargadas -->
     <div class="card" onclick="openModal('m-ig')">
       <div class="card-img-wrap">
-        <img class="card-img" src="assets/images/IMAGEN_CUENTAS_PRECARGADAS.png" alt="Cuentas wellness CDMX"/>
+        <img class="card-img" src="IMAGEN_CUENTAS_PRECARGADAS.png" alt="Cuentas wellness CDMX"/>
         <div class="card-logo-badge">
-          <img src="assets/images/IMAGEN_LOGO_INSTAGRAM.png" alt="Instagram"/>
+          <img src="IMAGEN_LOGO_INSTAGRAM.png" alt="Instagram"/>
         </div>
       </div>
       <div class="card-label">Cuentas wellness CDMX</div>
@@ -225,9 +225,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
     <!-- Card 2: Mis marcas -->
     <div class="card" onclick="openModal('m-cuentas')">
       <div class="card-img-wrap">
-        <img class="card-img" src="assets/images/IMAGEN_CARGA_TUS_CUENTAS.png" alt="Mis marcas"/>
+        <img class="card-img" src="IMAGEN_CARGA_TUS_CUENTAS.png" alt="Mis marcas"/>
         <div class="card-logo-badge">
-          <img src="assets/images/IMAGEN_LOGO_INSTAGRAM.png" alt="Instagram"/>
+          <img src="IMAGEN_LOGO_INSTAGRAM.png" alt="Instagram"/>
         </div>
       </div>
       <div class="card-label">Mis marcas favoritas</div>
@@ -237,7 +237,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
     <!-- Card 3: Avatar -->
     <div class="card" onclick="openModal('m-avatar')">
       <div class="card-img-wrap">
-        <img class="card-img" src="assets/images/IMAGEN_ESCOGE_TU_AVATAR.png" alt="Mi avatar"/>
+        <img class="card-img" src="IMAGEN_ESCOGE_TU_AVATAR.png" alt="Mi avatar"/>
       </div>
       <div class="card-label">Mi perfil FUNKY</div>
       <div class="card-sub">Escoge tu avatar</div>
@@ -249,9 +249,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
     <!-- Card 4: Spotify -->
     <div class="card" onclick="openModal('m-spotify')">
       <div class="card-img-wrap">
-        <img class="card-img" src="assets/images/IMAGEN_ESCOGE_MUSICA_EN_SPOTIFY.png" alt="Spotify"/>
+        <img class="card-img" src="IMAGEN_ESCOGE_MUSICA_EN_SPOTIFY.png" alt="Spotify"/>
         <div class="card-logo-badge">
-          <img src="assets/images/IMAGEN_LOGO_SPOTIFY.png" alt="Spotify"/>
+          <img src="IMAGEN_LOGO_SPOTIFY.png" alt="Spotify"/>
         </div>
       </div>
       <div class="card-label">Música para lo que hago</div>
@@ -261,9 +261,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
     <!-- Card 5: Calendario (full width) -->
     <div class="card full" onclick="openModal('m-cal')">
       <div class="card-img-wrap">
-        <img class="card-img" src="assets/images/IMAGEN_AGREGA_UN_EVENTO_A_TU_CALENDARIO.png" alt="Calendario"/>
+        <img class="card-img" src="IMAGEN_AGREGA_UN_EVENTO_A_TU_CALENDARIO.png" alt="Calendario"/>
         <div class="card-logo-badge">
-          <img src="assets/images/IMAGEN_LOGO_GOOGLE_CALENDAR.png" alt="Google Calendar"/>
+          <img src="IMAGEN_LOGO_GOOGLE_CALENDAR.png" alt="Google Calendar"/>
         </div>
       </div>
       <div class="card-label">Eventos al calendario</div>
@@ -275,16 +275,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
 
 <!-- FOOTER — fiel al diseño Canva -->
 <footer class="footer">
-  <img class="footer-logo" src="assets/images/LOGO_FUNKY_GREENS.png" alt="Funky Greens"/>
+  <img class="footer-logo" src="LOGO_FUNKY_GREENS.png" alt="Funky Greens"/>
   <p class="footer-tagline">Microgreens a Domicilio</p>
   <p class="footer-phone">+52 55 3887 6474</p>
   <a class="footer-ig-link" href="https://instagram.com/funkygreens.mx" target="_blank" rel="noopener">
-    <img src="assets/images/IMAGEN_LOGO_INSTAGRAM.png" alt="Instagram"/>
+    <img src="IMAGEN_LOGO_INSTAGRAM.png" alt="Instagram"/>
     <span>@funkygreens.MX</span>
   </a>
   <div class="footer-heart-row">
     <span>de FunkyGreens con</span>
-    <img class="footer-heart-img" src="assets/images/imagen_corazon_footer.png" alt="♥"/>
+    <img class="footer-heart-img" src="imagen_corazon_footer.png" alt="♥"/>
   </div>
 </footer>
 
@@ -382,9 +382,22 @@ body{font-family:'DM Sans',sans-serif;background:var(--negro);min-height:100vh;o
 </div>
 
 
+
+<!-- ═══ MODAL — CONFIGURACIÓN API ══════════════ -->
+<div class="backdrop" id="m-setup" onclick="outsideClose(event,'m-setup')">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">🔑 Activar FUNKY</div>
+    <div class="modal-sub">Pega tu API Key de Anthropic para activar a FUNKY. Solo se guarda en este navegador, nunca en el código.</div>
+    <input class="field" id="setup-key" type="password" placeholder="sk-ant-api03-..."/>
+    <div style="font-size:11px;color:#999;margin-bottom:14px;">Encuéntrala en <strong>console.anthropic.com → API Keys</strong></div>
+    <button class="btn btn-dark" onclick="saveApiKey()">Activar FUNKY 🌱</button>
+  </div>
+</div>
+
 <!-- ═══ SCRIPTS ════════════════════════════════ -->
 <script>
-const CFG={apiKey:'PEGA_TU_API_KEY_AQUI',model:'claude-sonnet-4-20250514',wa:'https://wa.me/525538876474'};
+const CFG={model:'claude-sonnet-4-20250514',wa:'https://wa.me/525538876474'};
 const SYS=`Eres FUNKY 🌱, la aliada de nutrición y wellness de Funky Greens CDMX. Fresca, directa, energética. Hablas como amiga experta en español mexicano natural. Párrafos cortos. Emojis con criterio.\n\nSobre Funky Greens: Startup CDMX de Pao y Fer. Microgreens a domicilio, zona poniente CDMX. Filosofía: el alimento como medicina. 100% orgánico, sin pesticidas, entrega el mismo día de cosecha.\n\n17 variedades: Arúgula, Rábano, Girasol, Chícharo, Eneldo, Kohlrabi, Brócoli, Cilantro, Kale, Col de Bruselas, Col Morada, Poro, Berro, Mostaza, Nastorium, Rábano Rosa, Rábano Morado.\n\nPRIMERA VEZ: Di exactamente — "Hola, soy FUNKY 🌱 tu aliada personal de wellness.\n\nEstoy aquí para integrar todo tu mundo wellness en un solo lugar:\n\n🗓 Te aviso de eventos y talleres en CDMX antes de que se llenen\n🎵 Pongo música en Spotify según lo que estés haciendo\n📅 Agendo eventos directo en tu Google Calendar\n🌿 Te comparto novedades de nutrición, marcas y lanzamientos que te interesan\n\nY me puedes preguntar cualquier cosa relacionada a wellness, nutrición, salud, bienestar y ejercicio 💚\n\nPara personalizar tu experiencia elige tu perfil y tus marcas en las cards de abajo.\n\n¿Cada cuándo quieres que te mande novedades?\n○ Todos los días por la mañana\n○ Una vez a la semana\n○ Solo cuando yo te pregunte"\n\nSPOTIFY: Cuando pidan música busca playlists. Da 1 opción principal + 1 alternativa con link open.spotify.com.\n\nCALENDARIO: Cuando sugieras evento con fecha+hora+lugar confirmados pregunta si lo agregas a Google Calendar. Si dicen sí, créalo con recordatorio 24hrs.\n\nMICROGREEN DEL DÍA: Al final de cada respuesta agrega: "🌱 Microgreen del día: [variedad] — [1 dato]. Va perfecto con [platillo]." Rota las 17 variedades.\n\nCONTACTO: Para pedidos/suscripciones/entregas di: "Te conecto con el equipo de Funky Greens 👇 ${CFG.wa}"\n\nLÍMITES: Sin diagnósticos. Sin vender. Sin inventar eventos.`;
 const AVS=[{id:'AmigaChill',n:'Amiga Chill',s:'pixel-art',b:'fde8f0',x:''},{id:'Yogui2026',n:'Yogui',s:'pixel-art',b:'e8f5e9',x:''},{id:'Foodie2026',n:'Foodie',s:'pixel-art',b:'fff3cd',x:''},{id:'Jardinera2026',n:'Jardinera',s:'pixel-art',b:'d4edda',x:''},{id:'Exploradora2026',n:'Exploradora',s:'pixel-art',b:'e8eaf6',x:''},{id:'Adventurer1FG',n:'Atleta',s:'adventurer',b:'d1f76a',x:'&hairColor=2c1b18,f9c74f'},{id:'Adventurer2FG',n:'Viajera',s:'adventurer',b:'b6e3f4',x:'&hairColor=c77dff,f7a8c4'},{id:'ToonHead1FG',n:'Creativa',s:'adventurer-neutral',b:'ffd6e0',x:''},{id:'ToonHead2FG',n:'Gen Z',s:'adventurer-neutral',b:'c9a7f4',x:''},{id:'MamaVerde2026',n:'Mamá Verde',s:'adventurer-neutral',b:'cedcd8',x:''},{id:'AverageJoe2026',n:'Average Joe',s:'pixel-art',b:'dbeafe',x:''},{id:'George2026',n:'George',s:'pixel-art',b:'e0e0e0',x:''},{id:'PapaVerde2026',n:'Papá Verde',s:'adventurer-neutral',b:'d4edda',x:''}];
 const avUrl=a=>`https://api.dicebear.com/7.x/${a.s}/svg?seed=${a.id}&backgroundColor=${a.b}${a.x}`;
@@ -400,9 +413,9 @@ function addMsg(role,text){const box=document.getElementById('chat-msgs');const 
 function showTyping(){const box=document.getElementById('chat-msgs');const p=loadP();const av=p.avUrl||'https://api.dicebear.com/7.x/adventurer/svg?seed=FunkySpec2&backgroundColor=cedcd8&hairColor=fc909f,b6e3f4,2c1b18&glasses=variant01';const t=document.createElement('div');t.className='msg funky';t.id='typing';t.innerHTML=`<img class="msg-av" src="${av}" alt="FUNKY"/><div class="bubble"><div class="typing"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div></div>`;box.appendChild(t);box.scrollTop=box.scrollHeight;}
 function hideTyping(){const t=document.getElementById('typing');if(t)t.remove();}
 async function sendMsg(){const inp=document.getElementById('chat-input');const txt=inp.value.trim();if(!txt)return;inp.value='';inp.style.height='auto';addMsg('user',txt);hist.push({role:'user',content:txt});saveH(hist);await callF(txt);}
-async function callF(msg){const isFirst=msg==='__FIRST__';if(!isFirst)hist.push({role:'user',content:msg});showTyping();if(!CFG.apiKey||CFG.apiKey==='PEGA_TU_API_KEY_AQUI'){hideTyping();const demo=`Hola, soy FUNKY 🌱 tu aliada personal de wellness.\n\nEstoy aquí para integrar todo tu mundo wellness en un solo lugar:\n\n🗓 Te aviso de eventos y talleres en CDMX antes de que se llenen\n🎵 Pongo música en Spotify según lo que estés haciendo\n📅 Agendo eventos directo en tu Google Calendar\n🌿 Te comparto novedades de nutrición, marcas y lanzamientos que te interesan\n\nY me puedes preguntar cualquier cosa relacionada a wellness, nutrición, salud, bienestar y ejercicio 💚\n\nPara personalizar tu experiencia elige tu perfil y tus marcas en las cards de abajo.\n\n¿Cada cuándo quieres que te mande novedades?\n○ Todos los días por la mañana\n○ Una vez a la semana\n○ Solo cuando yo te pregunte\n\n🌱 Microgreen del día: Brócoli — contiene 100x más sulforafano que el brócoli adulto. Va perfecto con cualquier ensalada o smoothie verde.`;addMsg('funky',demo);hist.push({role:'assistant',content:demo});saveH(hist);return;}
+async function callF(msg){const isFirst=msg==='__FIRST__';if(!isFirst)hist.push({role:'user',content:msg});showTyping();const storedKey=localStorage.getItem('fg_apikey');if(!storedKey){hideTyping();hideTyping();openModal('m-setup');return;}
 const msgs=isFirst?[{role:'user',content:'Hola, es mi primera vez aquí.'}]:hist;
-try{const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':CFG.apiKey,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:CFG.model,max_tokens:1000,system:SYS,messages:msgs})});const data=await res.json();hideTyping();const reply=data.content?.[0]?.text||'Algo salió mal 🌱';addMsg('funky',reply);hist.push({role:'assistant',content:reply});saveH(hist);}catch(e){hideTyping();addMsg('funky','Tuve un problema de conexión. ¿Lo intentamos de nuevo? 🌱');}
+try{const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':storedKey,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:CFG.model,max_tokens:1000,system:SYS,messages:msgs})});const data=await res.json();hideTyping();const reply=data.content?.[0]?.text||'Algo salió mal 🌱';addMsg('funky',reply);hist.push({role:'assistant',content:reply});saveH(hist);}catch(e){hideTyping();addMsg('funky','Tuve un problema de conexión. ¿Lo intentamos de nuevo? 🌱');}
 }
 function handleKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMsg();}}
 function autoResize(el){el.style.height='auto';el.style.height=el.scrollHeight+'px';}
@@ -419,6 +432,13 @@ let selAv=null;
 function buildAvatarGrid(){const p=loadP();selAv=p.avId||null;document.getElementById('av-grid').innerHTML=AVS.map(a=>`<div class="av-card${p.avId===a.id?' sel':''}" id="avc-${a.id}" onclick="pickAv('${a.id}')"><img src="${avUrl(a)}" alt="${a.n}"/><p>${a.n}</p></div>`).join('');}
 function pickAv(id){document.querySelectorAll('.av-card').forEach(c=>c.classList.remove('sel'));document.getElementById('avc-'+id).classList.add('sel');selAv=id;}
 function saveAvatar(){if(!selAv){alert('Elige un avatar primero');return;}const a=AVS.find(x=>x.id===selAv);const p=loadP();p.avId=a.id;p.avName=a.n;p.avUrl=avUrl(a);saveP(p);document.getElementById('chat-avatar').src=avUrl(a);const cprev=document.getElementById('card-av-preview');if(cprev)cprev.src=avUrl(a);closeModal('m-avatar');alert(`✅ Perfil guardado: ${a.n} 🌱`);}
+function saveApiKey(){
+  const k=document.getElementById('setup-key').value.trim();
+  if(!k||!k.startsWith('sk-')){alert('Pega una API key válida (empieza con sk-)');return;}
+  localStorage.setItem('fg_apikey',k);
+  closeModal('m-setup');
+  setTimeout(()=>callF('__FIRST__'),300);
+}
 window.onload=()=>{renderTags();buildAvatarGrid();const p=loadP();if(p.avUrl){document.getElementById('chat-avatar').src=p.avUrl;const cp=document.getElementById('card-av-preview');if(cp)cp.src=p.avUrl;}if(hist.length>0)hist.forEach(m=>addMsg(m.role==='user'?'user':'funky',m.content));};
 </script>
 
